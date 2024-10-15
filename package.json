@@ -2,10 +2,10 @@
   "name": "generic-templates",
   "version": "0.1.0-development",
   "private": true,
-  "homepage": "https://stabilityprotocol.github.io/tradetrust-decentralized-renderer/",
+  "homepage": "https://stabilityprotocol.github.io/tradetrust-decentralized-renderer",
   "repository": {
     "type": "git",
-    "url": "https://github.com/TradeTrust/generic-templates.git"
+    "url": "https: //github.com/stabilityprotocol/tradetrust-decentralized-renderer.git"
   },
   "license": "Apache-2.0",
   "main": "build/index.js",
