@@ -11,7 +11,7 @@ const Content = (document: TemplateNdaDocument): JSX.Element => {
         <h1>NON-DISCLOSURE AGREEMENT (NDA)</h1>
         <p>
           This Non-Disclosure Agreement (the “Agreement”) is entered into as of
-          the [DATE], by and between:
+          the {document.effectiveDate}, by and between:
         </p>
         <p>
           <b>{document.disclosingParty.name}</b>,<br />

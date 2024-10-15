@@ -54,5 +54,10 @@ export const NdaPoweredBy = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-decoration: underline;
+
+    &:hover {
+      color: #30c5ff;
+    }
   }
 `;
