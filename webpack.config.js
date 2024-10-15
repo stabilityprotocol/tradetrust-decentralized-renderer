@@ -7,6 +7,7 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 const IS_DEV = process.env.NODE_ENV === "development";
 const IS_PROD = !IS_DEV;
+const REPO_NAME = "tradetrust-decentralized-renderer";
 
 module.exports = {
   entry: {
@@ -18,7 +19,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "[name].[fullhash:7].js",
-    publicPath: "/",
+    publicPath: IS_PROD ? `/${REPO_NAME}/` : "/",
   },
   module: {
     rules: [
@@ -54,12 +55,12 @@ module.exports = {
     }),
     ...(IS_PROD
       ? [
-          new CompressionPlugin({ test: /\.(js|css|html|svg)$/ }),
-          new BrotliPlugin({ test: /\.(js|css|html|svg)$/ }),
-          new CopyWebpackPlugin({
-            patterns: [{ from: "static/images", to: "static/images" }],
-          }),
-        ]
+        new CompressionPlugin({ test: /\.(js|css|html|svg)$/ }),
+        new BrotliPlugin({ test: /\.(js|css|html|svg)$/ }),
+        new CopyWebpackPlugin({
+          patterns: [{ from: "static/images", to: "static/images" }],
+        }),
+      ]
       : []),
   ],
   optimization: {
