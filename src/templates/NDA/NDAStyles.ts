@@ -6,6 +6,7 @@ export const NdaWrapper = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 30px;
 `;
 
 export const NdaBody = styled.div`
@@ -14,6 +15,7 @@ export const NdaBody = styled.div`
   border: 1px solid #000;
   padding: 20px;
   border-radius: 5px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
 
   h1 {
     font-size: 24px;
