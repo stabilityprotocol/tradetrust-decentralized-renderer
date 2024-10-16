@@ -53,7 +53,7 @@ const Content = (document: TemplateNdaDocument): JSX.Element => {
           </li>
           <li>
             Use the Confidential Information only for the purpose of{" "}
-            {document.purpose}.
+            <i>{document.purpose}</i>.
           </li>
           <li>
             Take all reasonable precautions to protect the confidentiality of

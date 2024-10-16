@@ -4,7 +4,7 @@ import { TemplateBTemplates } from "./examples/TemplateB";
 import { TemplateNDATemplates } from "./NDA";
 
 export const registry: TemplateRegistry<any> = {
-  TEMPLATE_A: TemplateATemplates,
-  TEMPLATE_B: TemplateBTemplates,
+  // TEMPLATE_A: TemplateATemplates,
+  // TEMPLATE_B: TemplateBTemplates,
   NDA: TemplateNDATemplates,
 };
